@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<script src="MapScript.js"></script>
+	<title>Full Court Performance</title>
+	<link rel="stylesheet" type="text/css" href="MapStyle.css">
+	</head>
+	<body>
+		<div id="SideNav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times</a>
+			<a href="FinalProject1.html">Home</a>
+			<a href="AboutUs.html">About Us</a>
+			<a href="#">Local Courts</a>
+			<a href="csc130PP.html">Training Videos</a>
+			<a href="#">NBA Stats</a>
+			<a href="NBAHighlights.HTML">Nightly Highlights</a>
+			<a href="Mypage.html">My page</a>
+		</div>
+		<span style="font-family: Arial Black" onclick="openNav()">Show Sidebar</span>
+		
+		<div class="main">
+			<h1>Full Court Performance</h1>
+			<h2>Find Courts Near Me!</h2>
+			<h3>Not sure where to play? Just look for the red marker nearest to you! Alternatively, use the search function to search for a gym.</h3>
+		</div>
+		<div id="map"></div>
+		<input type="text" id="SearchText" value="CARSA">
+		<button id = "Search" onclick="">Go!</button>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJbZLEFjys1_WWy4mASMoRUzgtTY-LJSw&callback=initMap";>
+		</script>
+
+		<script src="FinalProject.js"></script>
+	</body>
+</html>
